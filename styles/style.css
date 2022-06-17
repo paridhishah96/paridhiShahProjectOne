@@ -290,3 +290,77 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+
+header {
+  height: 100vh;
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .wrapper nav ul .homeStrike {
+  text-decoration: line-through;
+}
+header .wrapper a {
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.brandingPros {
+  height: 80vh;
+  background-color: #C3DAB7;
+  padding: 200px 0 100px 0;
+}
+.brandingPros .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brandingPros .imgContainer {
+  position: relative;
+}
+.brandingPros .textCircle {
+  position: absolute;
+  top: -35%;
+  left: -20%;
+  width: 50%;
+}
+.brandingPros .brandingDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px 120px;
+}
+.brandingPros .brandingDesign .branding, .brandingPros .brandingDesign .designDevelop {
+  padding: 0 20px;
+}

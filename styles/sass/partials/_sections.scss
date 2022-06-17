@@ -1,0 +1,38 @@
+// brandingPros Section
+.brandingPros {
+    height: 80vh;
+    background-color: $lightSage;
+    padding: 200px 0 100px 0;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgContainer {
+        position: relative;
+        
+    }
+    .textCircle {
+        position: absolute;
+        top: -35%;
+        left: -20%;
+        width: 50%;
+    }
+    .brandingDesign {
+        display: flex;
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px 120px;
+        .branding, .designDevelop {
+            padding: 0 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
