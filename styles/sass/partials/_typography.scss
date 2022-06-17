@@ -1,0 +1,54 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family:  'Montserrat', sans-serif;
+    font-weight: normal;
+    color: $black;
+}
+
+h1, h2, h3 h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: $black;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+// heading font sizes
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor:pointer;
+}
