@@ -238,7 +238,6 @@ body {
 
 h1, h2, h3 h4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   color: #333333;
   margin: 0;
   text-transform: uppercase;
@@ -249,11 +248,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 ul,
@@ -291,6 +294,19 @@ img {
   margin: 0 auto;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 header {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
@@ -308,6 +324,7 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20px;
 }
 header .wrapper nav {
   display: -webkit-box;
@@ -328,7 +345,6 @@ header .wrapper a {
 }
 
 .brandingPros {
-  height: 80vh;
   background-color: #C3DAB7;
   padding: 200px 0 100px 0;
 }
@@ -363,4 +379,169 @@ header .wrapper a {
 }
 .brandingPros .brandingDesign .branding, .brandingPros .brandingDesign .designDevelop {
   padding: 0 20px;
+}
+
+.ecosystem .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 100px;
+}
+.ecosystem .wrapper .ecosystemImgText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+}
+.ecosystem .wrapper .ecosystemImgText .ecoImgContainer img {
+  border-radius: 50%;
+}
+.ecosystem .wrapper .ecosystemImgText .ecotextContainer {
+  font-style: italic;
+}
+
+.featuresOffered {
+  height: 100vh;
+  background-image: url(../assets/home-4.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featuresOffered .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featuresOffered .featuresTextBox {
+  width: 55%;
+}
+.featuresOffered .featuresTextBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featuresOffered .featuresTextBox ul li {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+}
+.featuresOffered .featuresTextBox ul li h2 {
+  font-weight: normal;
+}
+
+.teamGallery {
+  padding: 100px 0;
+}
+.teamGallery h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.teamGallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 80px;
+}
+.teamGallery .wrapper .playersText {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 50px;
+  background-color: #F6F6F6;
+}
+.teamGallery .wrapper .playersImgContainer {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 20px;
+}
+.teamGallery .wrapper .workWithUs {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.teamGallery .wrapper .workWithUs p {
+  padding: 10px;
+  text-align: center;
+}
+
+.viewPorfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C3DAB7;
+}
+.viewPorfolio .porfolioTextContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+.viewPorfolio .porfolioTextContainer h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.viewPorfolio .porfolioTextContainer p {
+  opacity: 0.85;
+  padding-bottom: 20px;
+}
+.viewPorfolio .portfolioImgContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }

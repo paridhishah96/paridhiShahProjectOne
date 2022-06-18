@@ -1,6 +1,5 @@
 // brandingPros Section
 .brandingPros {
-    height: 80vh;
     background-color: $lightSage;
     padding: 200px 0 100px 0;
     .wrapper {
@@ -30,9 +29,121 @@
     }
 }
 
+// Ecosystem section styling
+.ecosystem .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 100px;
+    .ecosystemImgText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 70px;
+        .ecoImgContainer img {
+            border-radius: 50%;
+        }
+        .ecotextContainer {
+            font-style: italic;
+        }
+    }
+    
+}
 
 
+// featuresOffered section
+.featuresOffered {
+    height: 100vh;
+    background-image: url(../assets/home-4.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .wrapper {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .featuresTextBox {
+        width: 55%;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            li {
+                flex-basis: 50%;
+                display: flex;
+                padding: 5px 10px;
+                h2 {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
 
+//  Team Gallery Section styling
 
+.teamGallery {
+    padding: 100px 0;
+    h3 {
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
 
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        .playersText {
+            flex-basis: 50%;
+            padding: 50px;
+            background-color: $whiteTwo;
+        }
+        .playersImgContainer {
+            flex-basis: 25%;
+            padding: 20px;
+        }
+        .workWithUs {
+            flex-basis: 25%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            p {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
 
+// viewPorfolio styling
+
+.viewPorfolio {
+    display: flex;
+    background-color: $lightSage;
+    .porfolioTextContainer {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        h3 {
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        p {
+            opacity: 0.85;
+            padding-bottom: 20px;
+        }
+    }
+
+    .portfolioImgContainer {
+        flex-basis: 50%;
+    }
+}
