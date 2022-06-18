@@ -1,0 +1,82 @@
+footer {
+    background-color: $black;
+    color: $white;
+    font-size: 1rem;
+    .wrapper {
+        padding-bottom: 75px;
+    }
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h2 {
+        color: $white;
+        font-size: 1rem;
+        padding: 120px 20px 30px 0;
+    }
+
+    address, p, li, label {
+        font-size: 0.8rem;
+    }
+    address {
+        padding: 5px 0;
+    }
+    p {
+        margin: 0;
+        padding: 5px 0;
+    }
+}
+
+.contactUs .socialIcons {
+    i {
+        padding: 20px 7px 0 0;
+        font-size: 0.8rem;
+    }
+}
+
+.recentPosts {
+    h2 {
+        text-align: center;
+    }
+    ul {
+        list-style: inside;
+    }
+}
+
+.subscribeNow{
+    h2 {
+        text-align: right;
+        padding-right: 0;
+    }
+    p {
+        padding: 0 0 10px 0;
+    }
+    form {
+        display: flex;
+        justify-content: end;
+        input {
+            padding: 5px;
+            &::placeholder {
+                font-size: 0.75rem;
+                color: black;
+
+            }
+        }
+        button {
+            background-color: $lightSage;
+            flex-basis: 11%;
+            padding: 5px;
+        }
+    }
+    
+    
+}
+
+.copyright {
+    border-top: rgba($color: $whiteTwo, $alpha: 0.15) solid 2px;
+    padding: 30px 0;
+    p {
+        text-align: center;
+    }
+}

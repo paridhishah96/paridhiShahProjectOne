@@ -545,3 +545,100 @@ header .wrapper a {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+footer .wrapper {
+  padding-bottom: 75px;
+}
+footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer h2 {
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 120px 20px 30px 0;
+}
+footer address, footer p, footer li, footer label {
+  font-size: 0.8rem;
+}
+footer address {
+  padding: 5px 0;
+}
+footer p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.contactUs .socialIcons i {
+  padding: 20px 7px 0 0;
+  font-size: 0.8rem;
+}
+
+.recentPosts h2 {
+  text-align: center;
+}
+.recentPosts ul {
+  list-style: inside;
+}
+
+.subscribeNow h2 {
+  text-align: right;
+  padding-right: 0;
+}
+.subscribeNow p {
+  padding: 0 0 10px 0;
+}
+.subscribeNow form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.subscribeNow form input {
+  padding: 5px;
+}
+.subscribeNow form input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.subscribeNow form input::-moz-placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.subscribeNow form input:-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.subscribeNow form input::-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.subscribeNow form input::placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.subscribeNow form button {
+  background-color: #C3DAB7;
+  -ms-flex-preferred-size: 11%;
+      flex-basis: 11%;
+  padding: 5px;
+}
+
+.copyright {
+  border-top: rgba(246, 246, 246, 0.15) solid 2px;
+  padding: 30px 0;
+}
+.copyright p {
+  text-align: center;
+}
