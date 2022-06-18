@@ -344,6 +344,37 @@ header {
   text-transform: uppercase;
 }
 
+.contactNav {
+  padding-bottom: 30px;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-1.jpeg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.contactHeader .wrapper {
+  width: 50%;
+  position: relative;
+}
+.contactHeader .wrapper .line {
+  display: block;
+  position: absolute;
+  border: #333333 solid 1px;
+  width: 50px;
+  height: 1px;
+  top: 60px;
+}
+.contactHeader h3 {
+  font-size: 2.5rem;
+  position: absolute;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  top: 70px;
+}
+
 .brandingPros {
   background-color: #C3DAB7;
   padding: 200px 0 100px 0;

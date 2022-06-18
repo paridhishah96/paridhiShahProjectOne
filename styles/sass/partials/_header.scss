@@ -27,3 +27,35 @@ header {
         text-transform: uppercase;
     }
 }
+
+// Header styling for contact page
+.contactNav{
+    padding-bottom: 30px;
+}
+
+.contactHeader {
+    background-image: url(../assets/contact-1.jpeg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 50vh;
+    .wrapper {
+        width: 50%;
+        position: relative;
+        .line {
+            display: block;
+            position: absolute;
+            border: $black solid 1px;
+            width: 50px;
+            height: 1px;
+            top: 60px;
+        }
+    }
+    h3 {
+        font-size: 2.5rem;
+        position: absolute;
+        font-weight: bold;
+        margin: 10px 0 0 0;
+        top: 70px
+    }
+}
