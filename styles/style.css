@@ -314,7 +314,7 @@ header {
   background-size: cover;
 }
 
-header .wrapper {
+.topNav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,20 +326,20 @@ header .wrapper {
           align-items: center;
   padding-top: 20px;
 }
-header .wrapper nav {
+.topNav .wrapper nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .wrapper nav ul {
+.topNav .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .wrapper nav ul .homeStrike {
+.topNav .wrapper nav ul .homeStrike {
   text-decoration: line-through;
 }
-header .wrapper a {
+.topNav .wrapper a {
   padding: 5px 10px;
   text-transform: uppercase;
 }
@@ -545,6 +545,12 @@ header .wrapper a {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
+.viewPorfolio a {
+  background-color: #F6F6F6;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 footer {
   background-color: #333333;
@@ -637,8 +643,9 @@ footer p {
 
 .copyright {
   border-top: rgba(246, 246, 246, 0.15) solid 2px;
-  padding: 30px 0;
+  padding: 50px 0;
 }
-.copyright p {
+.copyright h2 {
   text-align: center;
+  padding: 0;
 }

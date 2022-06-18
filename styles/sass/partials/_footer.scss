@@ -75,8 +75,10 @@ footer {
 
 .copyright {
     border-top: rgba($color: $whiteTwo, $alpha: 0.15) solid 2px;
-    padding: 30px 0;
-    p {
+    padding: 50px 0;
+    h2 {
         text-align: center;
+        padding: 0;
+
     }
 }
