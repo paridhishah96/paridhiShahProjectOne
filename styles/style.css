@@ -583,6 +583,109 @@ header {
   font-weight: bold;
 }
 
+.contactMain .wrapper {
+  width: 60%;
+}
+.contactMain h3 {
+  font-weight: bold;
+}
+.contactMain .needHelp {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.contactMain .contactDetails .contactPageDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px 0;
+}
+.contactMain .contactDetails .contactPageDetails i {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.contactMain .contactDetails .contactPageDetails h2 {
+  font-weight: bold;
+}
+.contactMain .contactDetails .contactPageDetails .phoneInfo .needHelp {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.contactMain .contactDetails .contactPageDetails .phoneInfo, .contactMain .contactDetails .contactPageDetails .addressInfo, .contactMain .contactDetails .contactPageDetails .emailInfo {
+  width: 33.3333333333%;
+}
+.contactMain .contactDetails .contactPageDetails address {
+  padding-top: 20px;
+}
+.contactMain .contactDetails .contactPageDetails .addressInfo, .contactMain .contactDetails .contactPageDetails .emailInfo {
+  border-left: 2px rgba(51, 51, 51, 0.2) solid;
+  padding-left: 30px;
+}
+.contactMain .contactForm {
+  margin: 100px 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactMain .contactForm input, .contactMain .contactForm textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.contactMain .contactForm input::-webkit-input-placeholder, .contactMain .contactForm textarea::-webkit-input-placeholder {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+.contactMain .contactForm input::-moz-placeholder, .contactMain .contactForm textarea::-moz-placeholder {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+.contactMain .contactForm input:-ms-input-placeholder, .contactMain .contactForm textarea:-ms-input-placeholder {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+.contactMain .contactForm input::-ms-input-placeholder, .contactMain .contactForm textarea::-ms-input-placeholder {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+.contactMain .contactForm input::placeholder, .contactMain .contactForm textarea::placeholder {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+.contactMain .contactForm input:focus, .contactMain .contactForm textarea:focus {
+  border-bottom: 1px solid #333333;
+}
+.contactMain .contactForm input {
+  width: 32.3333333333%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.contactMain .contactForm textarea {
+  width: 100%;
+}
+.contactMain .contactForm button {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333333;
+}
+
+.preFooterImg {
+  background-image: url(../assets/contact-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
 footer {
   background-color: #333333;
   color: #FFFFFF;
