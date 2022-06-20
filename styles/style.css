@@ -259,6 +259,10 @@ h3 {
   font-size: 1.3rem;
 }
 
+h4 {
+  text-transform: uppercase;
+}
+
 ul,
 li,
 a,
@@ -586,7 +590,7 @@ header {
 .contactMain .wrapper {
   width: 60%;
 }
-.contactMain h3 {
+.contactMain h4 {
   font-weight: bold;
 }
 .contactMain .needHelp {
@@ -607,8 +611,9 @@ header {
   font-size: 2rem;
   padding-bottom: 20px;
 }
-.contactMain .contactDetails .contactPageDetails h2 {
+.contactMain .contactDetails .contactPageDetails h4 {
   font-weight: bold;
+  text-transform: uppercase;
 }
 .contactMain .contactDetails .contactPageDetails .phoneInfo .needHelp {
   padding-top: 20px;
@@ -624,7 +629,15 @@ header {
   border-left: 2px rgba(51, 51, 51, 0.2) solid;
   padding-left: 30px;
 }
-.contactMain .contactForm {
+
+.preFooterImg {
+  background-image: url(../assets/contact-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.commentContactForm {
   margin: 100px 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,55 +648,48 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.contactMain .contactForm input, .contactMain .contactForm textarea {
+.commentContactForm input, .commentContactForm textarea {
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 }
-.contactMain .contactForm input::-webkit-input-placeholder, .contactMain .contactForm textarea::-webkit-input-placeholder {
+.commentContactForm input::-webkit-input-placeholder, .commentContactForm textarea::-webkit-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.contactMain .contactForm input::-moz-placeholder, .contactMain .contactForm textarea::-moz-placeholder {
+.commentContactForm input::-moz-placeholder, .commentContactForm textarea::-moz-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.contactMain .contactForm input:-ms-input-placeholder, .contactMain .contactForm textarea:-ms-input-placeholder {
+.commentContactForm input:-ms-input-placeholder, .commentContactForm textarea:-ms-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.contactMain .contactForm input::-ms-input-placeholder, .contactMain .contactForm textarea::-ms-input-placeholder {
+.commentContactForm input::-ms-input-placeholder, .commentContactForm textarea::-ms-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.contactMain .contactForm input::placeholder, .contactMain .contactForm textarea::placeholder {
+.commentContactForm input::placeholder, .commentContactForm textarea::placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.contactMain .contactForm input:focus, .contactMain .contactForm textarea:focus {
+.commentContactForm input:focus, .commentContactForm textarea:focus {
   border-bottom: 1px solid #333333;
 }
-.contactMain .contactForm input {
+.commentContactForm input {
   width: 32.3333333333%;
   padding: 10px 0;
   margin-bottom: 20px;
 }
-.contactMain .contactForm textarea {
+.commentContactForm textarea {
   width: 100%;
 }
-.contactMain .contactForm button {
+.commentContactForm button {
   margin-top: 50px;
   text-transform: uppercase;
   font-size: 1rem;
   padding-bottom: 5px;
   border-bottom: 1px solid #333333;
-}
-
-.preFooterImg {
-  background-image: url(../assets/contact-2.jpeg);
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
 }
 
 footer {
