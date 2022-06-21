@@ -64,6 +64,14 @@
         justify-content: end;
         align-items: center;
     }
+
+    .fa-stack-1x, .fa-stack-2x {
+        left: -10px;
+        position: absolute;
+    }
+    span {
+        padding-right: 20px;
+    }
     .featuresTextBox {
         width: 55%;
         ul {
@@ -95,18 +103,19 @@
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 80px;
+        justify-content: space-between;
+        // padding-top: 80px;
         .playersText {
-            flex-basis: 50%;
-            padding: 50px;
+            flex-basis: 49%;
+            // padding: 50px;
             background-color: $whiteTwo;
         }
         .playersImgContainer {
-            flex-basis: 25%;
-            padding: 20px;
+            flex-basis: 24%;
+            // padding: 20px;
         }
         .workWithUs {
-            flex-basis: 25%;
+            flex-basis: 24%;
             padding: 20px;
             display: flex;
             justify-content: center;
@@ -114,7 +123,7 @@
             text-transform: uppercase;
             font-size: 1.2rem;
             p {
-                padding: 10px;
+                // padding: 10px;
                 text-align: center;
             }
         }
@@ -211,4 +220,138 @@
     background-size: cover;
     background-position: center;
     height: 60vh;
+}
+
+.blogMain {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    .sectionSeperatorLine {
+        border: 1px solid rgba($color: $black, $alpha: 0.2);
+        margin: 10px 0;
+    }
+    .wrapper {
+        width: 80%;
+    }
+    .articleBlog{
+        padding-top: 50px;
+        h3 {
+            font-weight: bold;
+        }
+        .insiteLinks {
+            font-size: 1rem;
+            
+            a {
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+            
+        }
+        .authorInfo {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+            .elementHeading {
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-bottom: 10px;
+                
+            }
+            .elementInfo {
+                opacity: 0.8;
+                font-size: 0.8rem;
+            }
+
+            .authorImgName {
+                display: flex;
+                align-items: center;
+                .authorImg img {
+                    border-radius: 50%;
+                }
+                .authorNamePosition {
+                    padding-left: 10px;
+                    
+                }
+            }
+            .dateCategoryTags {
+                display: flex;
+                align-items: center;
+                div {
+                    padding: 0 15px;
+                }
+            }
+
+        }
+    }
+}
+
+.blogMain {
+    article {
+        h4 {
+            text-transform: none;
+        }
+        p {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+    }
+    .shareIcons {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+        align-items: center;
+        p {
+            text-transform: uppercase;
+        }
+    }
+    
+}
+
+.blogMain {
+    .relatedPosts {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        .relatedPostContainers {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                width: calc( 96% / 3 );
+                p {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}
+
+.blogMain {
+    .blogComments {
+        padding-bottom: 60px;
+    }
+    .individualComment {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .commentInfo {
+            padding-left: 30px;
+        }
+    }
+
+}
+
+.commentContactForm {
+    .wrapper {
+        width: inherit;
+    }
+    .contactForm {
+        padding-top: 35px;
+    }
 }

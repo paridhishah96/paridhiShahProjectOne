@@ -379,6 +379,10 @@ header {
   top: 70px;
 }
 
+.blogHeader {
+  background-image: url(../assets/blog-1.jpeg);
+}
+
 .brandingPros {
   background-color: #C3DAB7;
   padding: 200px 0 100px 0;
@@ -471,6 +475,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+.featuresOffered .fa-stack-1x, .featuresOffered .fa-stack-2x {
+  left: -10px;
+  position: absolute;
+}
+.featuresOffered span {
+  padding-right: 20px;
+}
 .featuresOffered .featuresTextBox {
   width: 55%;
 }
@@ -510,22 +521,22 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .teamGallery .wrapper .playersText {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding: 50px;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
   background-color: #F6F6F6;
 }
 .teamGallery .wrapper .playersImgContainer {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  padding: 20px;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
 }
 .teamGallery .wrapper .workWithUs {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,7 +551,6 @@ header {
   font-size: 1.2rem;
 }
 .teamGallery .wrapper .workWithUs p {
-  padding: 10px;
   text-align: center;
 }
 
@@ -635,6 +645,145 @@ header {
   background-size: cover;
   background-position: center;
   height: 60vh;
+}
+
+.blogMain h2 {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.blogMain .sectionSeperatorLine {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin: 10px 0;
+}
+.blogMain .wrapper {
+  width: 80%;
+}
+.blogMain .articleBlog {
+  padding-top: 50px;
+}
+.blogMain .articleBlog h3 {
+  font-weight: bold;
+}
+.blogMain .articleBlog .insiteLinks {
+  font-size: 1rem;
+}
+.blogMain .articleBlog .insiteLinks a {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.blogMain .articleBlog .authorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .articleBlog .authorInfo p {
+  margin: 0;
+}
+.blogMain .articleBlog .authorInfo .elementHeading {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.blogMain .articleBlog .authorInfo .elementInfo {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+.blogMain .articleBlog .authorInfo .authorImgName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogMain .articleBlog .authorInfo .authorImgName .authorImg img {
+  border-radius: 50%;
+}
+.blogMain .articleBlog .authorInfo .authorImgName .authorNamePosition {
+  padding-left: 10px;
+}
+.blogMain .articleBlog .authorInfo .dateCategoryTags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogMain .articleBlog .authorInfo .dateCategoryTags div {
+  padding: 0 15px;
+}
+
+.blogMain article h4 {
+  text-transform: none;
+}
+.blogMain article p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+.blogMain .shareIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogMain .shareIcons p {
+  text-transform: uppercase;
+}
+
+.blogMain .relatedPosts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.blogMain .relatedPosts .relatedPostContainers {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .relatedPosts .relatedPostContainers a {
+  width: 32%;
+}
+.blogMain .relatedPosts .relatedPostContainers a p {
+  text-transform: uppercase;
+}
+
+.blogMain .blogComments {
+  padding-bottom: 60px;
+}
+.blogMain .individualComment {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogMain .individualComment .commentInfo {
+  padding-left: 30px;
+}
+
+.commentContactForm .wrapper {
+  width: inherit;
+}
+.commentContactForm .contactForm {
+  padding-top: 35px;
 }
 
 .commentContactForm {
