@@ -627,10 +627,11 @@ header {
   padding-right: 20px;
 }
 .contactMain .contactDetails .contactPageDetails .phoneInfo, .contactMain .contactDetails .contactPageDetails .addressInfo, .contactMain .contactDetails .contactPageDetails .emailInfo {
-  width: 33.3333333333%;
+  width: 32%;
 }
 .contactMain .contactDetails .contactPageDetails address {
   padding-top: 20px;
+  font-style: normal;
 }
 .contactMain .contactDetails .contactPageDetails .addressInfo, .contactMain .contactDetails .contactPageDetails .emailInfo {
   border-left: 2px rgba(51, 51, 51, 0.2) solid;

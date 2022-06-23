@@ -1,6 +1,6 @@
 // brandingPros Section
 .brandingPros {
-    background-color: $lightSage;
+    background-color: $accent;
     padding: 200px 0 100px 0;
     .wrapper {
         display: flex;
@@ -134,7 +134,7 @@
 
 .viewPorfolio {
     display: flex;
-    background-color: $lightSage;
+    background-color: $accent;
     .porfolioTextContainer {
         flex-basis: 50%;
         display: flex;
@@ -201,10 +201,12 @@
             }
 
             .phoneInfo, .addressInfo, .emailInfo {
-                width: calc( 100% / 3 );
+                width: calc( 96% / 3 );
             }
             address {
+
                 padding-top: 20px;
+                font-style: normal;
             }
 
             .addressInfo, .emailInfo {

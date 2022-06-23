@@ -1,19 +1,19 @@
 html {
     font-size: 125%;
-}
+} // making sure the font size is a min of 20px
 
 body {
     font-family:  'Montserrat', sans-serif;
     font-weight: normal;
     color: $black;
-}
+} // importing and declaring font family from google fonts!
 
 h1, h2, h3 h4 {
     font-family: 'Montserrat', sans-serif;
     color: $black;
     margin: 0;
     text-transform: uppercase;
-}
+} 
 
 // heading font sizes
 h1 {
@@ -36,6 +36,8 @@ h4 {
     text-transform: uppercase;
 }
 
+
+// stripping the default styling from list and button elements
 ul,
 li,
 a,

@@ -10,7 +10,9 @@
 @import "./partials/header";
 
 // all the sections from all pages
-@import "./partials/sections";
+@import "./partials/homeSections";
+@import "./partials/contactSections";
+@import "./partials/blogSections";
 
 // the form styling from contact and blog page
 @import "./partials/form";

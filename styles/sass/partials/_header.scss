@@ -33,6 +33,7 @@ header {
     padding-bottom: 30px;
 }
 
+// changes that are not the same as home header styling
 .contactHeader {
     background-image: url(../assets/contact-1.jpeg);
     background-size: contain;
@@ -60,6 +61,8 @@ header {
     }
 }
 
+
+// change of bg image on blog page
 .blogHeader {
     background-image: url(../assets/blog-1.jpeg);
 }
