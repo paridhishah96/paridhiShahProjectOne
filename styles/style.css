@@ -311,13 +311,6 @@ img {
   left: 0;
 }
 
-header {
-  height: 100vh;
-  background-image: url(../assets/home-1.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-
 .topNav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +339,28 @@ header {
 .topNav .wrapper a {
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.shopNav .bagCounter {
+  position: relative;
+}
+.shopNav .bagCounter .counter {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: #C3DAB7;
+  color: #333333;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 .contactNav {
@@ -381,6 +396,20 @@ header {
 
 .blogHeader {
   background-image: url(../assets/blog-1.jpeg);
+}
+
+main {
+  position: relative;
+}
+main .lineBetweenHeaderMain {
+  content: "";
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  text-align: center;
+  width: 0;
+  height: 12vh;
+  border: 0.5px solid rgba(51, 51, 51, 0.4);
 }
 
 .brandingPros {
@@ -508,6 +537,20 @@ header {
 }
 
 .teamGallery {
+  position: relative;
+}
+.teamGallery .lineBetweenHeaderMain {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  width: 0;
+  height: 10vh;
+  border: 0.5px solid rgba(51, 51, 51, 0.4);
+}
+
+.teamGallery {
   padding: 100px 0;
 }
 .teamGallery h3 {
@@ -515,40 +558,22 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
-.teamGallery .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 80px;
+.teamGallery .galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
 }
-.teamGallery .wrapper .playersText {
-  padding: 50px;
+.teamGallery .galleryChild1 {
+  grid-column: 1/3;
+}
+.teamGallery .playersImgContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.teamGallery .playersText {
   background-color: #F6F6F6;
-}
-.teamGallery .wrapper .playersImgContainer {
-  padding: 20px;
-}
-.teamGallery .wrapper .workWithUs {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-.teamGallery .wrapper .workWithUs p {
-  text-align: center;
 }
 
 .viewPorfolio {
@@ -781,7 +806,7 @@ header {
 }
 
 .contactForm {
-  margin: 100px 0 120px;
+  margin: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

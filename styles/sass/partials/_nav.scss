@@ -1,0 +1,39 @@
+// nav styling
+.topNav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    nav {
+        display: flex;
+        ul {
+            display: flex;
+            .homeStrike {
+                text-decoration: line-through;
+            }
+        }
+    }
+    a {
+        padding: 5px 10px;
+        text-transform: uppercase;
+    }
+}
+
+// the counter on the bag
+.shopNav {
+    .bagCounter {
+        position: relative;
+
+        .counter {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            background-color: $accent;
+            color: $black;
+            padding: 4px 8px;
+            border-radius: 50%;
+            font-size: 0.5rem;
+            font-weight: bold;
+        }
+    }
+}

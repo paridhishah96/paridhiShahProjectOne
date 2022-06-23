@@ -7,27 +7,6 @@ header {
 
 }
 
-// nav styling
- .topNav .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    nav {
-        display: flex;
-        ul {
-            display: flex;
-            .homeStrike {
-                text-decoration: line-through;
-            }
-        }
-    }
-    a {
-        padding: 5px 10px;
-        text-transform: uppercase;
-    }
-}
-
 // Header styling for contact page
 .contactNav{
     padding-bottom: 30px;

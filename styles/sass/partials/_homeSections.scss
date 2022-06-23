@@ -1,3 +1,21 @@
+// Vertical line in the center of the page between the header and the first section
+
+main {
+    position: relative;
+    .lineBetweenHeaderMain {
+        content: "";
+        position: absolute;
+        top: -1%;
+        left: 50%;
+        text-align: center;
+        width: 0;
+        height: 12vh;
+        border: 0.5px solid rgba($color: $black, $alpha: 0.4);
+    }
+}
+
+
+
 // brandingPros Section
 .brandingPros {
     background-color: $accent;
@@ -90,6 +108,23 @@
     }
 }
 
+// Vertical line in the center of the page before the team gallery section
+
+.teamGallery {
+    position: relative;
+    .lineBetweenHeaderMain {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        width: 0;
+        height: 10vh;
+        border: 0.5px solid rgba($color: $black, $alpha: 0.4);
+    }
+}
+
+
 //  Team Gallery Section styling
 
 .teamGallery {
@@ -100,37 +135,27 @@
         text-align: center;
 
     }
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: space-between;
-        padding-top: 80px;
-        .playersText {
-            // flex-basis: 49%;
-            padding: 50px;
-            background-color: $whiteTwo;
-        }
-        .playersImgContainer {
-            // flex-basis: 24%;
-            padding: 20px;
-        }
-        .workWithUs {
-            // flex-basis: 24%;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            p {
-                // padding: 10px;
-                text-align: center;
-            }
-        }
+    .galleryContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 25px;
+    }
+
+    .galleryChild1 {
+        grid-column: 1 / 3;
+    }
+
+    .playersImgContainer {
+        width: fit-content;
+    }
+
+    .playersText {
+        background-color: $whiteTwo;
     }
 }
 
-// viewPorfolio styling
+// viewPorfolio section styling
 
 .viewPorfolio {
     display: flex;
@@ -161,209 +186,4 @@
         text-transform: uppercase;
         font-weight: bold;
     }
-}
-
-// contact page styling
-
-.contactMain {
-    .wrapper {
-        width: 60%;
-    }
-    h4 {
-        font-weight: bold;
-        }
-    .needHelp {
-        font-size: 0.8rem;
-        opacity: 0.9;
-        padding-bottom: 10px;
-        margin: 0;
-    }
-    .contactDetails{
-        
-        .contactPageDetails {
-            display: flex;
-            justify-content: space-around;
-            margin: 50px 0;
-
-
-
-            i {
-                font-size: 2rem;
-                padding-bottom: 20px;
-            }
-            h4 {
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-            .phoneInfo .needHelp {
-                padding-top: 20px;
-                padding-right: 20px;
-            }
-
-            .phoneInfo, .addressInfo, .emailInfo {
-                width: calc( 96% / 3 );
-            }
-            address {
-
-                padding-top: 20px;
-                font-style: normal;
-            }
-
-            .addressInfo, .emailInfo {
-                border-left: 2px rgba($color: $black, $alpha: 0.2) solid;
-                padding-left: 30px;
-            }
-        }
-    }
-}
-
-.preFooterImg {
-    background-image: url(../assets/contact-2.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-}
-
-.blogMain {
-    h2 {
-        font-weight: bold;
-        padding-bottom: 30px;
-    }
-    .sectionSeperatorLine {
-        border: 1px solid rgba($color: $black, $alpha: 0.2);
-        margin: 10px 0;
-    }
-    .wrapper {
-        width: 80%;
-    }
-    .articleBlog{
-        padding-top: 50px;
-        h3 {
-            font-weight: bold;
-        }
-        .insiteLinks {
-            font-size: 1rem;
-            
-            a {
-                font-size: 0.8rem;
-                opacity: 0.8;
-            }
-            
-        }
-        .authorInfo {
-            display: flex;
-            justify-content: space-between;
-
-            p {
-                margin: 0;
-            }
-            .elementHeading {
-                text-transform: uppercase;
-                font-weight: bold;
-                padding-bottom: 10px;
-                
-            }
-            .elementInfo {
-                opacity: 0.8;
-                font-size: 0.8rem;
-            }
-
-            .authorImgName {
-                display: flex;
-                align-items: center;
-                .authorImg img {
-                    border-radius: 50%;
-                }
-                .authorNamePosition {
-                    padding-left: 10px;
-                    
-                }
-            }
-            .dateCategoryTags {
-                display: flex;
-                align-items: center;
-                div {
-                    padding: 0 15px;
-                }
-            }
-
-        }
-    }
-}
-
-.blogMain {
-    article {
-        h4 {
-            text-transform: none;
-        }
-        p {
-            font-size: 1rem;
-            opacity: 0.85;
-        }
-    }
-    .shareIcons {
-        display: flex;
-        justify-content: space-between;
-        width: 15%;
-        align-items: center;
-        p {
-            text-transform: uppercase;
-        }
-    }
-    
-}
-
-.blogMain {
-    .relatedPosts {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        
-        .relatedPostContainers {
-            padding-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            a {
-                width: calc( 96% / 3 );
-                p {
-                    text-transform: uppercase;
-                }
-            }
-        }
-
-    }
-}
-
-.blogMain {
-    .blogComments {
-        padding-bottom: 60px;
-        // position: relative;
-    }
-    .individualComment {
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        .commentInfo {
-            padding-left: 30px;
-            p {
-                margin: 0;
-            }
-        }
-        .commentImg img {
-            border-radius: 50%;
-        }
-    }
-
-    // .individualComment::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 0;
-    //     height: 0;
-    //     top: 108px;
-    //     left: 33px;
-    //     border-top: 20px solid transparent;
-    //     border-bottom: 20px solid transparent;
-    //     border-left: 20px solid transparent;
-    //     border-right: 30px solid blue;
-    //     border-radius: 30%;
-    // }   
 }

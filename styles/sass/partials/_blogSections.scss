@@ -1,0 +1,144 @@
+
+.blogMain {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    .sectionSeperatorLine {
+        border: 1px solid rgba($color: $black, $alpha: 0.2);
+        margin: 10px 0;
+    }
+    .wrapper {
+        width: 80%;
+    }
+    .articleBlog{
+        padding-top: 50px;
+        h3 {
+            font-weight: bold;
+        }
+        .insiteLinks {
+            font-size: 1rem;
+            
+            a {
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+            
+        }
+        .authorInfo {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+            .elementHeading {
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-bottom: 10px;
+                
+            }
+            .elementInfo {
+                opacity: 0.8;
+                font-size: 0.8rem;
+            }
+
+            .authorImgName {
+                display: flex;
+                align-items: center;
+                .authorImg img {
+                    border-radius: 50%;
+                }
+                .authorNamePosition {
+                    padding-left: 10px;
+                    
+                }
+            }
+            .dateCategoryTags {
+                display: flex;
+                align-items: center;
+                div {
+                    padding: 0 15px;
+                }
+            }
+
+        }
+    }
+}
+
+.blogMain {
+    article {
+        h4 {
+            text-transform: none;
+        }
+        p {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+    }
+    .shareIcons {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+        align-items: center;
+        p {
+            text-transform: uppercase;
+        }
+    }
+    
+}
+
+.blogMain {
+    .relatedPosts {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        .relatedPostContainers {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                width: calc( 96% / 3 );
+                p {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}
+
+.blogMain {
+    .blogComments {
+        padding-bottom: 60px;
+        // position: relative;
+    }
+    .individualComment {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .commentInfo {
+            padding-left: 30px;
+            p {
+                margin: 0;
+            }
+        }
+        .commentImg img {
+            border-radius: 50%;
+        }
+    }
+}
+
+      // .individualComment::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 0;
+    //     height: 0;
+    //     top: 108px;
+    //     left: 33px;
+    //     border-top: 20px solid transparent;
+    //     border-bottom: 20px solid transparent;
+    //     border-left: 20px solid transparent;
+    //     border-right: 30px solid blue;
+    //     border-radius: 30%;
+    // } 
