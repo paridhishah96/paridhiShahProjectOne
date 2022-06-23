@@ -1,3 +1,5 @@
+
+// General footer styling
 footer {
     background-color: $black;
     color: $white;
@@ -21,6 +23,7 @@ footer {
     }
     address {
         padding: 5px 0;
+        font-style: normal;
     }
     p {
         margin: 0;
@@ -28,6 +31,8 @@ footer {
     }
 }
 
+
+// Styling the fb, twitter and instagram font awesome icons
 .contactUs .socialIcons {
     i {
         padding: 20px 7px 0 0;
@@ -35,15 +40,22 @@ footer {
     }
 }
 
+
+// Styling the recent posts section in the footer!
 .recentPosts {
     h2 {
         text-align: center;
     }
     ul {
         list-style: inside;
+        li {
+            padding-bottom: 5px;
+        }
     }
 }
 
+
+// Styling the subscribe now and footer form 
 .subscribeNow{
     h2 {
         text-align: right;
@@ -73,6 +85,8 @@ footer {
     
 }
 
+
+// Styling the final copyright
 .copyright {
     border-top: rgba($color: $whiteTwo, $alpha: 0.15) solid 2px;
     padding: 50px 0;

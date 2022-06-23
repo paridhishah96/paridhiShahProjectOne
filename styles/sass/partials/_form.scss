@@ -1,9 +1,8 @@
-.commentContactForm {
+.contactForm {
     margin: 100px 0 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     input, textarea {
         border: none;
         outline: none;
@@ -34,4 +33,13 @@
         border-bottom: 1px solid $black;
     }
 
+}
+
+.commentContactForm {
+    .wrapper {
+        width: inherit;
+    }
+    .contactForm {
+        padding-top: 35px;
+    }
 }

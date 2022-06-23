@@ -1,9 +1,20 @@
+//The app is built web first. Media queries go from web to mobile.
+
+// setup and base styles for common css on the project
 @import "./partials/setup";
 @import "./partials/variables";
 @import "./partials/typography";
 @import "./partials/basestyles";
+
+// header styles - found on all pages
 @import "./partials/header";
+
+// all the sections from all pages
 @import "./partials/sections";
+
+// the form styling from contact and blog page
 @import "./partials/form";
+
+// footer styling - found on all pages
 @import "./partials/footer";
 

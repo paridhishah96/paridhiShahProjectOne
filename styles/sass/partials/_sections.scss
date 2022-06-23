@@ -102,20 +102,20 @@
     }
     .wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
         justify-content: space-between;
-        // padding-top: 80px;
+        padding-top: 80px;
         .playersText {
-            flex-basis: 49%;
-            // padding: 50px;
+            // flex-basis: 49%;
+            padding: 50px;
             background-color: $whiteTwo;
         }
         .playersImgContainer {
-            flex-basis: 24%;
-            // padding: 20px;
+            // flex-basis: 24%;
+            padding: 20px;
         }
         .workWithUs {
-            flex-basis: 24%;
+            // flex-basis: 24%;
             padding: 20px;
             display: flex;
             justify-content: center;
@@ -334,24 +334,34 @@
 .blogMain {
     .blogComments {
         padding-bottom: 60px;
+        // position: relative;
     }
     .individualComment {
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         .commentInfo {
             padding-left: 30px;
+            p {
+                margin: 0;
+            }
+        }
+        .commentImg img {
+            border-radius: 50%;
         }
     }
 
-}
-
-.commentContactForm {
-    .wrapper {
-        width: inherit;
-    }
-    .contactForm {
-        padding-top: 35px;
-    }
+    // .individualComment::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 0;
+    //     height: 0;
+    //     top: 108px;
+    //     left: 33px;
+    //     border-top: 20px solid transparent;
+    //     border-bottom: 20px solid transparent;
+    //     border-left: 20px solid transparent;
+    //     border-right: 30px solid blue;
+    //     border-radius: 30%;
+    // }   
 }

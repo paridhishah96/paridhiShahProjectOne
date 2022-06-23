@@ -524,19 +524,16 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 80px;
 }
 .teamGallery .wrapper .playersText {
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
+  padding: 50px;
   background-color: #F6F6F6;
 }
 .teamGallery .wrapper .playersImgContainer {
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
+  padding: 20px;
 }
 .teamGallery .wrapper .workWithUs {
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,22 +768,18 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .blogMain .individualComment .commentInfo {
   padding-left: 30px;
 }
-
-.commentContactForm .wrapper {
-  width: inherit;
+.blogMain .individualComment .commentInfo p {
+  margin: 0;
 }
-.commentContactForm .contactForm {
-  padding-top: 35px;
+.blogMain .individualComment .commentImg img {
+  border-radius: 50%;
 }
 
-.commentContactForm {
+.contactForm {
   margin: 100px 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,48 +790,55 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.commentContactForm input, .commentContactForm textarea {
+.contactForm input, .contactForm textarea {
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 }
-.commentContactForm input::-webkit-input-placeholder, .commentContactForm textarea::-webkit-input-placeholder {
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.commentContactForm input::-moz-placeholder, .commentContactForm textarea::-moz-placeholder {
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.commentContactForm input:-ms-input-placeholder, .commentContactForm textarea:-ms-input-placeholder {
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.commentContactForm input::-ms-input-placeholder, .commentContactForm textarea::-ms-input-placeholder {
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.commentContactForm input::placeholder, .commentContactForm textarea::placeholder {
+.contactForm input::placeholder, .contactForm textarea::placeholder {
   line-height: 1.2;
   font-size: 0.8rem;
 }
-.commentContactForm input:focus, .commentContactForm textarea:focus {
+.contactForm input:focus, .contactForm textarea:focus {
   border-bottom: 1px solid #333333;
 }
-.commentContactForm input {
+.contactForm input {
   width: 32.3333333333%;
   padding: 10px 0;
   margin-bottom: 20px;
 }
-.commentContactForm textarea {
+.contactForm textarea {
   width: 100%;
 }
-.commentContactForm button {
+.contactForm button {
   margin-top: 50px;
   text-transform: uppercase;
   font-size: 1rem;
   padding-bottom: 5px;
   border-bottom: 1px solid #333333;
+}
+
+.commentContactForm .wrapper {
+  width: inherit;
+}
+.commentContactForm .contactForm {
+  padding-top: 35px;
 }
 
 footer {
@@ -867,6 +867,7 @@ footer address, footer p, footer li, footer label {
 }
 footer address {
   padding: 5px 0;
+  font-style: normal;
 }
 footer p {
   margin: 0;
@@ -883,6 +884,9 @@ footer p {
 }
 .recentPosts ul {
   list-style: inside;
+}
+.recentPosts ul li {
+  padding-bottom: 5px;
 }
 
 .subscribeNow h2 {
