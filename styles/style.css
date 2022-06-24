@@ -333,8 +333,9 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.topNav .wrapper nav ul .homeStrike {
+.topNav .wrapper nav ul li .strike:hover, .topNav .wrapper nav ul li .strike:focus {
   text-decoration: line-through;
+  outline: none;
 }
 .topNav .wrapper a {
   padding: 5px 10px;
@@ -363,35 +364,37 @@ header {
   background-size: cover;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 .contactNav {
   padding-bottom: 30px;
 }
 
 .contactHeader {
   background-image: url(../assets/contact-1.jpeg);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 50vh;
-}
-.contactHeader .wrapper {
-  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
   position: relative;
 }
-.contactHeader .wrapper .line {
+.contactHeader .line {
   display: block;
   position: absolute;
   border: #333333 solid 1px;
   width: 50px;
   height: 1px;
-  top: 60px;
+  bottom: 100px;
+  left: 20%;
 }
 .contactHeader h3 {
   font-size: 2.5rem;
   position: absolute;
   font-weight: bold;
   margin: 10px 0 0 0;
-  top: 70px;
+  bottom: -35px;
+  left: 20%;
 }
 
 .blogHeader {
@@ -558,22 +561,52 @@ main .lineBetweenHeaderMain {
   text-transform: uppercase;
   text-align: center;
 }
+.teamGallery .playersText {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.teamGallery .playersText h2, .teamGallery .playersText p {
+  padding: 0 30px 20px;
+}
 .teamGallery .galleryContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 25px;
 }
-.teamGallery .galleryChild1 {
-  grid-column: 1/3;
-}
-.teamGallery .playersImgContainer {
+.teamGallery .galleryContainer .playersImgContainer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.teamGallery .playersText {
-  background-color: #F6F6F6;
+.teamGallery .galleryContainer .galleryChild1 {
+  grid-column: 1/3;
+}
+.teamGallery .workWithUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+.teamGallery .workWithUs p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .viewPorfolio {
@@ -620,6 +653,8 @@ main .lineBetweenHeaderMain {
 }
 
 .contactMain .wrapper {
+  margin-top: 100px;
+  margin-bottom: 0;
   width: 60%;
 }
 .contactMain h4 {
@@ -751,16 +786,21 @@ main .lineBetweenHeaderMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 15%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .blogMain .shareIcons p {
   text-transform: uppercase;
+  padding-right: 10px;
+}
+.blogMain .shareIcons .socialFaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogMain .shareIcons .socialFaIcons a {
+  padding: 0 7px;
 }
 
 .blogMain .relatedPosts {
@@ -787,16 +827,20 @@ main .lineBetweenHeaderMain {
   padding-bottom: 60px;
 }
 .blogMain .individualComment {
-  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 30px;
+  position: relative;
 }
 .blogMain .individualComment .commentInfo {
-  padding-left: 30px;
+  background-color: #F6F6F6;
+  padding: 20PX;
+  -ms-flex-preferred-size: 87%;
+      flex-basis: 87%;
 }
 .blogMain .individualComment .commentInfo p {
   margin: 0;
@@ -804,9 +848,39 @@ main .lineBetweenHeaderMain {
 .blogMain .individualComment .commentImg img {
   border-radius: 50%;
 }
+.blogMain .individualComment .commentorName {
+  font-style: bold;
+  padding-bottom: 1rem;
+}
+.blogMain .individualComment .commentorName span {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #808000;
+}
+.blogMain .individualComment .commentText {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.blogMain .individualComment .commentDate {
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.blogMain .individualComment::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 30%;
+  left: 9.2%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 29px solid #F6F6F6;
+}
 
 .contactForm {
-  margin: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,6 +889,9 @@ main .lineBetweenHeaderMain {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.contactForm .wrapper {
+  margin: 0 auto 100px;
 }
 .contactForm input, .contactForm textarea {
   border: none;
@@ -864,7 +941,7 @@ main .lineBetweenHeaderMain {
   width: inherit;
 }
 .commentContactForm .contactForm {
-  padding-top: 35px;
+  padding: 50px 0;
 }
 
 footer {
@@ -967,4 +1044,57 @@ footer p {
 .copyright h2 {
   text-align: center;
   padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .footerContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footerContent .contactUs,
+.footerContent .recentPosts {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .footerContent .subscribeNow {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .blogMain .individualComment::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 20%;
+    left: 8.5%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 29px solid #F6F6F6;
+  }
+}
+@media (max-width: 1150px) {
+  .featuresOffered h2, p {
+    font-size: 0.95rem;
+  }
+
+  .contactHeader .line, .contactHeader h3 {
+    left: 15%;
+  }
+
+  .contactMain .wrapper {
+    width: 70%;
+  }
 }

@@ -135,23 +135,41 @@ main {
         text-align: center;
 
     }
+
+    .playersText {
+        background-color: $whiteTwo;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        h2, p {
+            padding: 0 30px 20px;
+        }
+
+    }
+
     .galleryContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 25px;
+        .playersImgContainer {
+            width: fit-content;
+        }
+        .galleryChild1 {
+            grid-column: 1 / 3;
+        }
     }
+    .workWithUs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
 
-    .galleryChild1 {
-        grid-column: 1 / 3;
-    }
-
-    .playersImgContainer {
-        width: fit-content;
-    }
-
-    .playersText {
-        background-color: $whiteTwo;
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
     }
 }
 

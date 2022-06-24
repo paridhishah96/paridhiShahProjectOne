@@ -22,13 +22,13 @@
                 <nav class="creativeNav">
                     <ul>
                         <li>
-                            <a href="./index.html" class="homeStrike">Home</a>
+                            <a href="./index.html" class="strike">Home</a>
                         </li>
                         <li>
-                            <a href="./blog.html">Blog</a>
+                            <a href="./blog.html" class="strike">Blog</a>
                         </li>
                         <li>
-                            <a href="#">Portfolio</a>
+                            <a href="#" class="strike">Portfolio</a>
                         </li>
                     </ul>
                 </nav>
@@ -36,10 +36,10 @@
                 <nav class="shopNav">
                     <ul>
                         <li>
-                            <a href="#">Shop</a>
+                            <a href="#" class="strike">Shop</a>
                         </li>
                         <li>
-                            <a href="./contact.html">Contact</a>
+                            <a href="./contact.html" class="strike">Contact</a>
                         </li>
                         <li>
                             <a href="">
@@ -47,9 +47,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" class="bagCounter">
                                 <i class="fa-solid fa-bag-shopping"></i>
-                            </a>
+                                <span class="counter">2</span>
+                           </a>
                         </li>
                     </ul>
                 </nav>
@@ -102,15 +103,17 @@
                 </article>
                 <div class="shareIcons">
                     <p>Share:</p>
-                    <a href="">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+                    <div class="socialFaIcons">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="relatedPosts">
@@ -125,7 +128,7 @@
                     </a>
 
 
-                    <a href="">
+                    <a href="#">
                         <div class="relatedPostImgContainers">
                             <img src="./assets/blog-4.jpeg" alt="A desk with a plant, some candles, the letter A on it.">
                         </div>
@@ -133,7 +136,7 @@
                     </a>
 
 
-                    <a href="">
+                    <a href="#">
                         <div class="relatedPostImgContainers">
                             <img src="./assets/blog-5.jpeg" alt="A desk with an IPhone, a succulent, a cup of coffee and half a macbook.">
                         </div>
@@ -151,10 +154,10 @@
                         <img src="./assets/blog-6.jpeg" alt="Image of the comment writer">
                     </div>
                     <div class="commentInfo">
-                        <p>DANIEL VANDAFT<span>-Reply</span></p>
-                        <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.
+                        <p class="commentorName">DANIEL VANDAFT<span><a href=""> -Reply</a></span></p>
+                        <p class="commentText">Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.
                         </p>
-                        <p>July 2015 at 15 hours ago</p>
+                        <p class="commentDate">July 2015 at 15 hours ago</p>
                     </div>
                     
                 </div>
@@ -163,9 +166,9 @@
                         <img src="./assets/blog-7.jpeg" alt="Image of the comment writer">
                     </div>
                     <div class="commentInfo">
-                        <p>JENIFER LOOPZ<span>-Reply</span></p>
-                        <p>Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.</p>
-                        <p>July 2015 at 15 hours ago</p>
+                        <p class="commentorName">JENIFER LOOPZ<span><a href=""> -Reply</a></span></p>
+                        <p class="commentText">Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.</p>
+                        <p class="commentDate">July 2015 at 15 hours ago</p>
                     </div>
                     
                 </div>
@@ -184,7 +187,7 @@
     
                         <label for="subject" class="sr-only">Subject</label>
                         <input type="text" id="subject" placeholder="Subject (Optional)">
-    
+                        
                         <label for="message" class="sr-only">Detailed Message</label>
                         <textarea id="message" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
     

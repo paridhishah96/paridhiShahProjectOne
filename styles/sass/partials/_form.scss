@@ -1,7 +1,9 @@
 // form styling for the contact page along with common styling for contact and blog pages. :)
 
 .contactForm {
-    margin: 100px 0;
+    .wrapper {
+        margin: 0 auto 100px;
+    }
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,6 +45,6 @@
         width: inherit;
     }
     .contactForm {
-        padding-top: 35px;
+        padding: 50px 0;
     }
 }

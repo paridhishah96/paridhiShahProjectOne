@@ -8,8 +8,12 @@
         display: flex;
         ul {
             display: flex;
-            .homeStrike {
+            // strike through the nav a tags when hover with mouse or focus with keyboard
+            li .strike {
+                &:hover, &:focus {
                 text-decoration: line-through;
+                outline: none;
+                }
             }
         }
     }

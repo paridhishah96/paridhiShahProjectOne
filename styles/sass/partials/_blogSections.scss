@@ -78,14 +78,18 @@
     }
     .shareIcons {
         display: flex;
-        justify-content: space-between;
-        width: 15%;
         align-items: center;
         p {
             text-transform: uppercase;
+            padding-right: 10px;
+        }
+        .socialFaIcons {
+            display: flex;
+            a {
+                padding: 0 7px;
+            }
         }
     }
-    
 }
 
 .blogMain {
@@ -111,14 +115,16 @@
 .blogMain {
     .blogComments {
         padding-bottom: 60px;
-        // position: relative;
     }
     .individualComment {
-        padding-top: 30px;
         display: flex;
         justify-content: space-between;
+        padding-top: 30px;
+        position: relative;
         .commentInfo {
-            padding-left: 30px;
+            background-color: $whiteTwo;
+            padding: 20PX;
+            flex-basis: 87%;
             p {
                 margin: 0;
             }
@@ -126,19 +132,39 @@
         .commentImg img {
             border-radius: 50%;
         }
-    }
-}
+        .commentorName {
+            font-style: bold;
+            padding-bottom: 1rem;
+            span {
+                font-style: italic;
+                font-size: 0.9rem;
+                color: #808000;
+            }
+        }
+        .commentText {
+            color: rgba($color: $black, $alpha: 0.8);
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        .commentDate {
+            color: rgba($color: $black, $alpha: 0.7);
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+        }
 
-      // .individualComment::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 0;
-    //     height: 0;
-    //     top: 108px;
-    //     left: 33px;
-    //     border-top: 20px solid transparent;
-    //     border-bottom: 20px solid transparent;
-    //     border-left: 20px solid transparent;
-    //     border-right: 30px solid blue;
-    //     border-radius: 30%;
-    // } 
+    }
+
+    // The tiny triangle on the left of the bubble
+    .individualComment::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 30%;
+        left: 9.2%;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 29px solid $whiteTwo;
+    } 
+}
