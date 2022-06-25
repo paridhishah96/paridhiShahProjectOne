@@ -33,22 +33,36 @@
                 text-transform: uppercase;
             }
             .phoneInfo .needHelp {
-                padding-top: 20px;
-                padding-right: 20px;
+                padding-top: 7px;
+                padding-right: 7px;
             }
 
             .phoneInfo, .addressInfo, .emailInfo {
+                h2 {
+                    padding-bottom: 1.5rem;
+                } 
                 width: calc( 96% / 3 );
             }
             address {
-
-                padding-top: 20px;
+                font-size: 0.8rem;
+                opacity: 0.9;
+                padding-bottom: 20px;
                 font-style: normal;
             }
 
             .addressInfo, .emailInfo {
                 border-left: 2px rgba($color: $black, $alpha: 0.2) solid;
                 padding-left: 30px;
+            }
+            
+            .emailInfo {
+                p {
+                    margin: 0;
+                } 
+                a {
+                    font-size: 0.8rem;
+                    opacity: 0.9;
+                }
             }
         }
     }

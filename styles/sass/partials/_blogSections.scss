@@ -139,6 +139,9 @@
                 font-style: italic;
                 font-size: 0.9rem;
                 color: #808000;
+                &:hover, &:focus {
+                    color: $black;
+                }
             }
         }
         .commentText {
