@@ -15,7 +15,7 @@
             align-items: center;
             flex-basis: 100%;
         }
-    }     // End of footer styles
+    }   
     // The tiny triangle on the left of the bubble
     .blogMain .individualComment::before {
         content: '';
@@ -169,6 +169,25 @@
 }  // END media queries for max width- 810px
 
 @media (max-width: 730px) {
+    // branding section styling on home page 
+    .brandingPros .imgContainer {
+        .brandingImage {
+            display: flex;
+            justify-content: center;
+            img{
+                width: 70%;
+            } 
+                
+        }
+        .textCircle {
+            top: -40%;
+            left: 0;
+            img{
+                width: 70%;
+            }
+        }
+    }
+
     // ecosystem section styling on home page 
     .ecosystem .wrapper {
         padding: 20px;
@@ -195,6 +214,19 @@
         }
     }
 
+    // Home page portfolio section styling
+    .viewPorfolio {
+        .porfolioTextContainer {
+            h3, p {
+                margin: 0;
+            }
+            h3 {
+                padding-bottom: 1rem;
+            }
+
+        }
+    }
+
     //  phone address and email info section styling on contact page
     .contactMain .contactDetails .contactPageDetails {
         flex-wrap: wrap;
@@ -215,6 +247,137 @@
 }// END media queries for max width- 730px
 
 
+@media (max-width: 660px) {
+    // Features offer section styling on home page
+    .featuresOffered {
+        height: 60vh;
+        .featuresTextBox {
+            text-align: left; 
+            width: 60%;
+            ul {
+                flex-direction: column;
+                li {
+                    padding-top: 1.5rem;
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .fa-stack-2x {
+            left: -27%;
+        }
+    }
+
+    // comment box styling on blog page
+    .blogMain .individualComment .commentInfo {
+        padding: 5px;
+    }
+    // The tiny triangle on the left of the bubble
+    .blogMain .individualComment::before {
+        border-right: 15px solid $whiteTwo;
+    } 
+
+
+    // footer styling
+    footer {
+        .wrapper {
+            width: 95%;
+        }
+        .footerContent {
+            flex-wrap: wrap;
+            .contactUs,
+            .recentPosts,
+            .subscribeNow {
+                flex-basis: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-basis: 100%;
+            }
+        } 
+    }
+} // END media queries for max width- 660px
+
+@media (max-width: 620px) {
+    // styling the portfolio section from home page
+    .viewPorfolio .porfolioTextContainer p {
+        display: none;
+    }
+}// END media queries for max width- 620px
+
+
+@media (max-width: 570px) {
+
+    // forms styling for contact and blog page
+    .contactForm input {
+        width: 100%;
+    }
+
+    // contact page header styling
+    .contactHeader {
+        .line {
+            bottom: 40%;
+        }
+        h3 {
+            font-size: 2rem;
+            bottom: -15%
+        }
+    }
+}// END media queries for max width- 570px
+
+@media (max-width: 480px) {
+    // Styling for the branding section on home page
+    .brandingPros {
+        padding: 150px 0 75px;
+        .brandingDesign {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }   
+
+    // Home page teamGallery styles
+    .teamGallery .galleryContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 6fr;
+        .playersImgContainer {
+            display: flex;
+            justify-content: center;
+            grid-column: 1 / 3;
+            width: fit-content;
+        }
+        .galleryChild1, .workWithUs {
+            grid-column: 1 / 3;
+        }
+    }
+
+
+    // Portfolio section styling for home page
+    .viewPorfolio {
+        display: flex;
+        flex-direction: column-reverse;
+        .porfolioTextContainer, .portfolioImgContainer {
+            flex-basis: 50%;
+        }
+    }
+} // END media queries for max width- 570px
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,3 +386,7 @@
 @media (max-width: 1200px) {}
 @media (max-width: 1200px) {}
 @media (max-width: 1200px) {}
+@media (max-width: 1200px) {}
+@media (max-width: 1200px) {}
+
+// Last one needs to be 320px

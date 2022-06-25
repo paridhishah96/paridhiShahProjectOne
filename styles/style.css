@@ -1219,6 +1219,25 @@ footer p {
   }
 }
 @media (max-width: 730px) {
+  .brandingPros .imgContainer .brandingImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brandingPros .imgContainer .brandingImage img {
+    width: 70%;
+  }
+  .brandingPros .imgContainer .textCircle {
+    top: -40%;
+    left: 0;
+  }
+  .brandingPros .imgContainer .textCircle img {
+    width: 70%;
+  }
+
   .ecosystem .wrapper {
     padding: 20px;
   }
@@ -1245,6 +1264,13 @@ footer p {
     grid-column: 1/3;
   }
 
+  .viewPorfolio .porfolioTextContainer h3, .viewPorfolio .porfolioTextContainer p {
+    margin: 0;
+  }
+  .viewPorfolio .porfolioTextContainer h3 {
+    padding-bottom: 1rem;
+  }
+
   .contactMain .contactDetails .contactPageDetails {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1268,5 +1294,136 @@ footer p {
     border: none;
     padding-top: 20px;
     border-top: 2px rgba(51, 51, 51, 0.2) solid;
+  }
+}
+@media (max-width: 660px) {
+  .featuresOffered {
+    height: 60vh;
+  }
+  .featuresOffered .featuresTextBox {
+    text-align: left;
+    width: 60%;
+  }
+  .featuresOffered .featuresTextBox ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featuresOffered .featuresTextBox ul li {
+    padding-top: 1.5rem;
+  }
+  .featuresOffered .featuresTextBox ul li p {
+    display: none;
+  }
+  .featuresOffered .fa-stack-2x {
+    left: -27%;
+  }
+
+  .blogMain .individualComment .commentInfo {
+    padding: 5px;
+  }
+
+  .blogMain .individualComment::before {
+    border-right: 15px solid #F6F6F6;
+  }
+
+  footer .wrapper {
+    width: 95%;
+  }
+  footer .footerContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footerContent .contactUs,
+footer .footerContent .recentPosts,
+footer .footerContent .subscribeNow {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .viewPorfolio .porfolioTextContainer p {
+    display: none;
+  }
+}
+@media (max-width: 570px) {
+  .contactForm input {
+    width: 100%;
+  }
+
+  .contactHeader .line {
+    bottom: 40%;
+  }
+  .contactHeader h3 {
+    font-size: 2rem;
+    bottom: -15%;
+  }
+}
+@media (max-width: 480px) {
+  .brandingPros {
+    padding: 150px 0 75px;
+  }
+  .brandingPros .brandingDesign {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .teamGallery .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 6fr;
+  }
+  .teamGallery .galleryContainer .playersImgContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-column: 1/3;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .teamGallery .galleryContainer .galleryChild1, .teamGallery .galleryContainer .workWithUs {
+    grid-column: 1/3;
+  }
+
+  .viewPorfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .viewPorfolio .porfolioTextContainer, .viewPorfolio .portfolioImgContainer {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
