@@ -1292,7 +1292,7 @@ footer p {
   }
   .contactMain .contactDetails .contactPageDetails .addressInfo, .contactMain .contactDetails .contactPageDetails .emailInfo {
     border: none;
-    padding-top: 20px;
+    padding: 20px 0 0;
     border-top: 2px rgba(51, 51, 51, 0.2) solid;
   }
 }
@@ -1358,11 +1358,27 @@ footer .footerContent .subscribeNow {
   }
 }
 @media (max-width: 620px) {
+  .viewPorfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .viewPorfolio .porfolioTextContainer {
+    padding: 50px 0;
+  }
   .viewPorfolio .porfolioTextContainer p {
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 570px) {
+  .homePageHeader {
+    height: 70vh;
+  }
+
   .contactForm input {
     width: 100%;
   }
@@ -1413,17 +1429,40 @@ footer .footerContent .subscribeNow {
     grid-column: 1/3;
   }
 
-  .viewPorfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .blogMain .articleBlog .authorInfo .dateCategoryTags {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
-  .viewPorfolio .porfolioTextContainer, .viewPorfolio .portfolioImgContainer {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+  .blogMain .articleBlog .authorInfo .dateCategoryTags div {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 390px) {
+  .featuresOffered .featuresTextBox ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 0.5rem;
+    text-align: center;
+  }
+
+  .blogMain .individualComment::before {
+    left: 10%;
   }
 }

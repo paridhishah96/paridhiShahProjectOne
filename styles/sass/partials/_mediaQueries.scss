@@ -240,7 +240,7 @@
         }
         .addressInfo, .emailInfo {
             border: none;
-            padding-top: 20px;
+            padding: 20px 0 0;
             border-top: 2px rgba($color: $black, $alpha: 0.2) solid;
         }
     }
@@ -303,14 +303,24 @@
 } // END media queries for max width- 660px
 
 @media (max-width: 620px) {
-    // styling the portfolio section from home page
-    .viewPorfolio .porfolioTextContainer p {
-        display: none;
+    // Portfolio section styling for home page
+    .viewPorfolio {
+        display: flex;
+        flex-direction: column-reverse;
+        .porfolioTextContainer {
+            padding: 50px 0;
+            p {display: block;}
+        }
     }
 }// END media queries for max width- 620px
 
 
 @media (max-width: 570px) {
+
+    // home page header bg image styling
+    .homePageHeader {
+        height: 70vh;
+    }
 
     // forms styling for contact and blog page
     .contactForm input {
@@ -339,7 +349,6 @@
             justify-content: center;
         }
     }   
-
     // Home page teamGallery styles
     .teamGallery .galleryContainer {
         display: grid;
@@ -356,37 +365,40 @@
         }
     }
 
+    // Author information styling on blog page
 
-    // Portfolio section styling for home page
-    .viewPorfolio {
-        display: flex;
-        flex-direction: column-reverse;
-        .porfolioTextContainer, .portfolioImgContainer {
-            flex-basis: 50%;
+    .blogMain .articleBlog .authorInfo .dateCategoryTags {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        div {
+            padding: 10px 0;
         }
     }
-} // END media queries for max width- 570px
+
+    
+} // END media queries for max width- 480px
+
+@media (max-width: 390px) {
+    // features offered styling for home page
+    .featuresOffered .featuresTextBox ul li {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0.5rem; 
+        text-align: center;
+    }
+
+    // The tiny triangle on the left of the bubble
+    .blogMain { 
+        
+        .individualComment::before {
+            left: 10%;
+        }   
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {}
-@media (max-width: 1200px) {}
-@media (max-width: 1200px) {}
-@media (max-width: 1200px) {}
-@media (max-width: 1200px) {}
-
-// Last one needs to be 320px
+} // END media queries for max width- 390px
