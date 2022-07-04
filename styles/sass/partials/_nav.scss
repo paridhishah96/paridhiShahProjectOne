@@ -47,11 +47,14 @@
 .slideOutMenu {
     // background-color: rgba($color: $black, $alpha: 0.15);
     max-width: 300px;
-    width: 100%;
     height: 100vh;
     position: absolute;
     right: -100vw;
     transition: right 0.3s ease-in-out;
+
+    ul {
+        background-color: $whiteTwo;
+    }
 
     li {
         padding: 1rem 3rem;
@@ -59,19 +62,14 @@
 
     a {
         text-transform: uppercase;
-        // background-color: rgba($color: $accent, $alpha: 0.8);
-        // color: $whiteTwo;
-        // font-style: bold;
-
-        // i {
-        //     background-color: transparent;
-        //     color: #000;
-        // }
+        &:hover, &:focus {
+            font-weight: bold;
+        }
     }
 }
 
 .trigger:checked ~ .slideOutMenu {
-    right: 300px;
+    right: -15px;
 }
 
 // Styling the checkbox 
