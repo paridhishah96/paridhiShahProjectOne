@@ -323,17 +323,17 @@ img {
           align-items: center;
   padding-top: 20px;
 }
-.topNav .wrapper nav {
+.topNav .wrapper .defaultNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.topNav .wrapper nav ul {
+.topNav .wrapper .defaultNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.topNav .wrapper nav ul li .strike:hover, .topNav .wrapper nav ul li .strike:focus {
+.topNav .wrapper .defaultNav ul li .strike:hover, .topNav .wrapper .defaultNav ul li .strike:focus {
   text-decoration: line-through;
   outline: none;
 }
@@ -342,10 +342,10 @@ img {
   text-transform: uppercase;
 }
 
-.shopNav .bagCounter {
+.shopNav .bagCounter, .slideOutMenu .bagCounter {
   position: relative;
 }
-.shopNav .bagCounter .counter {
+.shopNav .bagCounter .counter, .slideOutMenu .bagCounter .counter {
   position: absolute;
   top: 20px;
   right: 0px;
@@ -357,11 +357,44 @@ img {
   font-weight: bold;
 }
 
+.slideOutMenu {
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: -100vw;
+  -webkit-transition: right 0.4s ease-in-out;
+  transition: right 0.4s ease-in-out;
+}
+.slideOutMenu li {
+  padding: 1rem 3rem;
+}
+.slideOutMenu a {
+  text-transform: uppercase;
+}
+
+.trigger:checked ~ .slideOutMenu {
+  right: 300px;
+}
+
+.hamburgerMenu {
+  position: relative;
+}
+.hamburgerMenu .trigger {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  opacity: 0;
+}
+
 header {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
   background-position: center;
   background-size: cover;
+}
+header .topNav {
+  position: relative;
 }
 
 .hamburgerMenu {
@@ -1145,7 +1178,7 @@ footer p {
   }
 }
 @media (max-width: 890px) {
-  .topNav .wrapper nav {
+  .topNav .wrapper .defaultNav {
     display: none;
   }
   .topNav .wrapper .hamburgerMenu {
@@ -1298,7 +1331,7 @@ footer p {
 }
 @media (max-width: 660px) {
   .featuresOffered {
-    height: 60vh;
+    height: 80vh;
   }
   .featuresOffered .featuresTextBox {
     text-align: left;
@@ -1375,10 +1408,6 @@ footer .footerContent .subscribeNow {
   }
 }
 @media (max-width: 570px) {
-  .homePageHeader {
-    height: 70vh;
-  }
-
   .contactForm input {
     width: 100%;
   }

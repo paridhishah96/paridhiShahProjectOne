@@ -16,9 +16,10 @@
     <a href="#mainContent" class="skip-link">Skip to main content.</a>    
 	<!-- Header and Nav-->
     <header class="homePageHeader">
+        
         <div class="topNav">
             <div class="wrapper">
-                <nav class="creativeNav slideOutNav">
+                <nav class="creativeNav defaultNav">
                     <ul>
                         <li>
                             <a href="./index.html" class="strike">Home</a>
@@ -35,11 +36,46 @@
                     <a href="./index.html">Creative</a>
                 </h1>
                 <div class="hamburgerMenu">
-                    <a href="#">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+                    <label for="trigger">
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </label>
+                        <!-- Slide out menu button -->
+                    <input type="checkbox" id="trigger" class="trigger">
+                    <!-- Slide out NAV Content -->
+                    <nav class="slideOutMenu">
+                        <ul>
+                            <li>
+                                <a href="./index.html" class="strike">Home</a>
+                            </li>
+                            <li>
+                                <a href="./blog.html" class="strike">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="strike">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#" class="strike">Shop</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html" class="strike">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="bagCounter">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span class="counter">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="shopNav slideOutNav">
+                <nav class="shopNav defaultNav">
                     <ul>
                         <li>
                             <a href="#" class="strike">Shop</a>
@@ -55,13 +91,20 @@
                         <li>
                             <a href="" class="bagCounter">
                                 <i class="fa-solid fa-bag-shopping"></i>
-                                <span class="counter">2</span>
+                                <span class="counter">0</span>
                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </div>        
+        </div>
+
+        
+
+        
+
+
+        <!-- Default NAV -->
     </header>
     <main id="mainContentHeader">
         <div class="lineBetweenHeaderMain"></div>

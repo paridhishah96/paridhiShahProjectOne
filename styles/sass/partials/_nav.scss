@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    nav {
+    .defaultNav {
         display: flex;
         ul {
             display: flex;
@@ -24,7 +24,7 @@
 }
 
 // the counter on the bag
-.shopNav {
+.shopNav, .slideOutMenu {
     .bagCounter {
         position: relative;
 
@@ -39,5 +39,41 @@
             font-size: 0.5rem;
             font-weight: bold;
         }
+    }
+}
+
+// Slide out NAV styling 
+
+.slideOutMenu {
+    // background-color: rgba($color: $black, $alpha: 0.15);
+    max-width: 300px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: -100vw;
+    transition: right 0.4s ease-in-out;
+
+    li {
+        padding: 1rem 3rem;
+    }
+
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.trigger:checked ~ .slideOutMenu {
+    right: 300px;
+}
+
+// Styling the checkbox 
+
+.hamburgerMenu {
+    position: relative;
+    .trigger {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        opacity: 0;
     }
 }

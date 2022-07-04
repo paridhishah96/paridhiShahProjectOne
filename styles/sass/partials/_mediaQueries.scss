@@ -90,7 +90,7 @@
 @media (max-width: 890px) {
     // Removing top Nav tags and creating hamburger menu which can be used with JS
     .topNav .wrapper{
-        nav {
+        .defaultNav {
            display: none;
         }
         .hamburgerMenu {
@@ -250,7 +250,7 @@
 @media (max-width: 660px) {
     // Features offer section styling on home page
     .featuresOffered {
-        height: 60vh;
+        height: 80vh;
         .featuresTextBox {
             text-align: left; 
             width: 60%;
@@ -316,11 +316,6 @@
 
 
 @media (max-width: 570px) {
-
-    // home page header bg image styling
-    .homePageHeader {
-        height: 70vh;
-    }
 
     // forms styling for contact and blog page
     .contactForm input {
@@ -402,3 +397,5 @@
 
 
 } // END media queries for max width- 390px
+
+
