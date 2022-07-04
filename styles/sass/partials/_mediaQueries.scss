@@ -92,9 +92,11 @@
     .topNav .wrapper{
         .defaultNav {
            display: none;
+           
         }
         .hamburgerMenu {
             display: block;
+            z-index: 10;
             i {
                 font-size: 2rem;
             }

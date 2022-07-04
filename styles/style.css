@@ -363,8 +363,8 @@ img {
   height: 100vh;
   position: absolute;
   right: -100vw;
-  -webkit-transition: right 0.4s ease-in-out;
-  transition: right 0.4s ease-in-out;
+  -webkit-transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
 }
 .slideOutMenu li {
   padding: 1rem 3rem;
@@ -382,9 +382,14 @@ img {
 }
 .hamburgerMenu .trigger {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 3px;
+  right: 10px;
   opacity: 0;
+}
+.hamburgerMenu input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 header {
@@ -1183,6 +1188,7 @@ footer p {
   }
   .topNav .wrapper .hamburgerMenu {
     display: block;
+    z-index: 10;
   }
   .topNav .wrapper .hamburgerMenu i {
     font-size: 2rem;
