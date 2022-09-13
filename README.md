@@ -5,7 +5,6 @@ Objective
 To convert a given design into a multi-page, functional, responsive website and present technical wins/ challenges.
 
 Project Requirements
-
     Site is responsive (down to 320px) and uses media queries
     Flexbox and a wrapper is used
     Sass variables are used
@@ -20,11 +19,9 @@ Project Requirements
     Project will be presented to discuss technical win(s) & technical challenge(s)
 
 Technical Win
-
     Making sure the web app is reposnsive without sacrificing on the DRYness of the code
     Steering from hard coding all the skills and adding them to an array of objects so it's more dynamic
     
  Technical Challenges
- 
     Humburger menu and making sure the code is not repetitive
     Learning and applying CSS Grid
